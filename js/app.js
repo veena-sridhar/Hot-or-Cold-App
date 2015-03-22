@@ -19,6 +19,7 @@ $(document).ready(function(){
 
 	function startGame () {
 		guessCount = 0;
+		$('#count').html(guessCount);
 		$("#feedback").html ("Make your guess!");
 		$("#guessList").html ("");
 		gameNumber = Math.floor ( Math.random() * 100 );
